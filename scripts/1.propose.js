@@ -38,9 +38,14 @@ async function propose() {
     // return { ...deployValues, proposalId }
 
     console.log(`proposalId: ${proposalId}`)
+    const state = await governor.state(proposalId);
+    console.log(`  state: ${state}`);
 }
 
 propose().catch((error) => {
+    console.error(error.message);
     console.error(error);
     process.exitCode = 1;
 });
+
+// proposalId: 65222735417911731166980298001209397345012604238194734247653394975983995029139

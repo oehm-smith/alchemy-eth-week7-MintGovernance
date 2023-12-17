@@ -10,7 +10,7 @@ contract MyToken is ERC20, ERC20Permit, ERC20Votes {
 
     constructor(address _governor) ERC20("MyToken", "MTK") ERC20Permit("MyToken") {
         governor = _governor;
-        _mint(msg.sender, 10000e18);
+        _mint(msg.sender, 999e18);
     }
 
     function mint(address to, uint256 amount) external {

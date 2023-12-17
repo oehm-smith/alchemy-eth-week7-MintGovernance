@@ -10,9 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@nomicfoundation/hardhat-verify": "^2.0.2",
     "@openzeppelin/contracts": "^4.8.0",
     "dotenv": "^16.3.1",
-    "hardhat": "^2.12.6"
+    "hardhat": "^2.12.6",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.1"
